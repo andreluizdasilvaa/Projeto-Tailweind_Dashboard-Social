@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Att - Tailwind</title>
+</head>
+
+<body class="bg-white dark:bg-[#1D2029]">
+    <!-- Background top -->
+    <div class="bg-[#F8F9FE] dark:bg-[#20222F] w-full h-56 fixed z-[-1]"></div>
+    <!-- Content | main -->
+    <main class="max-w-[1224px] mx-auto p-10 text-[#576078]">
+        
+        <!-- Header -->
+        <header class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 font-bold">
+            <!-- Text -->
+            <div>
+                <h1 class="text-3xl text-black dark:text-white">Social Media Dashboard</h1>
+                <p>Total Followers 23,004</p>
+            </div>
+
+            <hr class="border-[#576078] lg:hidden">
+
+            <!-- Swith dark mode -->
+            <div class="flex justify-between gap-2">
+                <label for="toggleDarkMode" class="cursor-pointer">Dark Mode</label>
+                <label class="cursor-pointer items-center">
+                    <input id="toggleDarkMode" type="checkbox" class="peer sr-only" />
+                    <div
+                        class="peer relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-gradient-to-r peer-checked:from-blue-500 peer-checked:to-green-500 peer-checked:after:translate-x-full peer-focus:outline-none rtl:peer-checked:after:-translate-x-full dark:bg-gray-700 dark:after:bg-slate-700 dark:peer-checked:after:border-slate-700">
+                    </div>
+                </label>
+            </div>
+        </header>
+
+        <section>
+            <!-- content cards -->
+            <div class="flex my-10 justify-center md:justify-between gap-4 flex-wrap">
+                <!-- card 1 -->
+                <div
+                    class="flex flex-col bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] min-w-60 min-h-52 font-bold cursor-pointer rounded-xl">
+                    <!-- TOP BORDER -->
+                    <div class="bg-blue-500 h-2 w-auto rounded-t-xl"></div>
+                    <!-- conteiner of content -->
+                    <div class="h-[100%] text-center flex flex-col justify-center items-center">
+                        <!-- Social -->
+                        <div class="flex gap-1 items-center">
+                            <img src="images/icon-facebook.svg" alt="icon-facebook">
+                            <p>@nathanf</p>
+                        </div>
+                        <!-- Number followers / sub -->
+                        <div class="py-4">
+                            <h3 class="text-5xl text-black dark:text-white">1983</h3>
+                            <p class="font-normal">FOLLOWERS</p>
+                        </div>
+                        <!-- metrics footer -->
+                        <div class="flex items-center gap-1">
+                            <img src="images/icon-up.svg" alt="icon-up">
+                            <p class="text-[#1EB589]">12 Today</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="flex flex-col bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] min-w-60 min-h-52 font-bold cursor-pointer rounded-xl">
+                    <!-- TOP BORDER -->
+                    <div class="bg-blue-500 h-2 w-auto rounded-t-xl"></div>
+                    <!-- conteiner of content -->
+                    <div class="h-[100%] text-center flex flex-col justify-center items-center">
+                        <!-- Social -->
+                        <div class="flex gap-1 items-center">
+                            <img src="images/icon-twitter.svg" alt="icon-twitter">
+                            <p>@nathanf</p>
+                        </div>
+                        <!-- Number followers / sub -->
+                        <div class="py-4">
+                            <h3 class="text-5xl text-black dark:text-white">1044</h3>
+                            <p class="font-normal">FOLLOWERS</p>
+                        </div>
+                        <!-- metrics footer -->
+                        <div class="flex items-center gap-1">
+                            <img src="images/icon-up.svg" alt="icon-up">
+                            <p class="text-[#1EB589]">99 Today</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div
+                    class="flex flex-col bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] min-w-60 min-h-52 font-bold cursor-pointer rounded-xl">
+                    <!-- TOP BORDER -->
+                    <div class="bg-gradient-to-r from-[#F6C478] to-[#D45595] h-2 w-auto rounded-t-xl"></div>
+                    <!-- conteiner of content -->
+                    <div class="h-[100%] text-center flex flex-col justify-center items-center">
+                        <!-- Social -->
+                        <div class="flex gap-1 items-center">
+                            <img src="images/icon-instagram.svg" alt="icon-instagram">
+                            <p>@realnathanf</p>
+                        </div>
+                        <!-- Number followers / sub -->
+                        <div class="py-4">
+                            <h3 class="text-5xl text-black dark:text-white">11k</h3>
+                            <p class="font-normal">FOLLOWERS</p>
+                        </div>
+                        <!-- metrics footer -->
+                        <div class="flex items-center gap-1">
+                            <img src="images/icon-up.svg" alt="icon-up">
+                            <p class="text-[#1EB589]">1099 Today</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div
+                    class="flex flex-col bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] min-w-60 min-h-52 font-bold cursor-pointer rounded-xl">
+                    <!-- TOP BORDER -->
+                    <div class="bg-[#DC414C] h-2 w-auto rounded-t-xl"></div>
+                    <!-- conteiner of content -->
+                    <div class="h-[100%] text-center flex flex-col justify-center items-center">
+                        <!-- Social -->
+                        <div class="flex gap-1 items-center">
+                            <img src="images/icon-youtube.svg" alt="icon-youtube">
+                            <p>@Nathan F.</p>
+                        </div>
+                        <!-- Number followers / sub -->
+                        <div class="py-4">
+                            <h3 class="text-5xl text-black dark:text-white">8239</h3>
+                            <p class="font-normal">SUBSCRIBERS</p>
+                        </div>
+                        <!-- metrics footer -->
+                        <div class="flex items-center gap-1">
+                            <img src="images/icon-down.svg" alt="icon-down">
+                            <p class="text-[#DC414C]"> 144 Today</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section>
+            <h2 class="text-2xl font-bold dark:text-white">Overview - Today</h2>
+
+            <!-- conteiner cards -->
+             <div class="flex flex-wrap justify-center md:justify-between my-6 gap-6 ">
+
+                <!-- card 1 -->
+                <div class=" flex justify-between bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] cursor-pointer px-10 py-6 w-64 min-h-32 gap-4 font-bold rounded-xl">
+                    
+                    <!-- info metric -->
+                     <div class="flex flex-col justify-between">
+                        <p>Page Views</p>
+                        <h3 class="text-3xl text-black dark:text-white">87</h3>
+                     </div>
+
+                     <div class="flex flex-col items-center justify-between">
+                        <img src="images/icon-facebook.svg" alt="icon-facebook">
+                        <div class="flex items-center">
+                            <img src="images/icon-up.svg" alt="icon-up">
+                            <p class="text-[#1EB589]">3%</p>
+                        </div>
+                     </div>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class=" flex justify-between bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] cursor-pointer px-10 py-6 w-64 min-h-32 gap-4 font-bold rounded-xl">
+                
+                    <!-- info metric -->
+                    <div class="flex flex-col justify-between">
+                        <p>Likes</p>
+                        <h3 class="text-3xl text-black dark:text-white">52</h3>
+                    </div>
+                
+                    <div class="flex flex-col items-center justify-between">
+                        <img src="images/icon-facebook.svg" alt="icon-facebook">
+                        <div class="flex items-center">
+                            <img src="images/icon-down.svg" alt="icon-down">
+                            <p class="text-[#DC414C]">2%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div
+                    class=" flex justify-between bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] cursor-pointer px-10 py-6 w-64 min-h-32 gap-4 font-bold rounded-xl">
+                
+                    <!-- info metric -->
+                    <div class="flex flex-col justify-between">
+                        <p>Likes</p>
+                        <h3 class="text-3xl text-black dark:text-white">5462</h3>
+                    </div>
+                
+                    <div class="flex flex-col items-center justify-between">
+                        <img src="images/icon-instagram.svg" alt="icon-instagram">
+                        <div class="flex items-center">
+                            <img src="images/icon-up.svg" alt="icon-up">
+                            <p class="text-[#1EB589]">2257%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div
+                    class=" flex justify-between bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] cursor-pointer px-10 py-6 w-64 min-h-32 gap-4 font-bold rounded-xl">
+                
+                    <!-- info metric -->
+                    <div class="flex flex-col justify-between">
+                        <p>Profile Views</p>
+                        <h3 class="text-3xl text-black dark:text-white">52k</h3>
+                    </div>
+                
+                    <div class="flex flex-col items-center justify-between">
+                        <img src="images/icon-instagram.svg" alt="icon-instagram">
+                        <div class="flex items-center">
+                            <img src="images/icon-up.svg" alt="icon-up">
+                            <p class="text-[#1EB589]">1375%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 5 -->
+                <div
+                    class=" flex justify-between bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] cursor-pointer px-10 py-6 w-64 min-h-32 gap-4 font-bold rounded-xl">
+                
+                    <!-- info metric -->
+                    <div class="flex flex-col justify-between">
+                        <p>Retweets</p>
+                        <h3 class="text-3xl text-black dark:text-white">117</h3>
+                    </div>
+                
+                    <div class="flex flex-col items-center justify-between">
+                        <img src="images/icon-twitter.svg" alt="icon-twitter">
+                        <div class="flex items-center">
+                            <img src="images/icon-up.svg" alt="icon-up">
+                            <p class="text-[#1EB589]">303%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 6 -->
+                <div
+                    class=" flex justify-between bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] cursor-pointer px-10 py-6 w-64 min-h-32 gap-4 font-bold rounded-xl">
+                
+                    <!-- info metric -->
+                    <div class="flex flex-col justify-between">
+                        <p>Likes</p>
+                        <h3 class="text-3xl text-black dark:text-white">507</h3>
+                    </div>
+                
+                    <div class="flex flex-col items-center justify-between">
+                        <img src="images/icon-twitter.svg" alt="icon-twitter">
+                        <div class="flex items-center">
+                            <img src="images/icon-up.svg" alt="icon-up">
+                            <p class="text-[#1EB589]">553%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 7 -->
+                <div
+                    class=" flex justify-between bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] cursor-pointer px-10 py-6 w-64 min-h-32 gap-4 font-bold rounded-xl">
+                
+                    <!-- info metric -->
+                    <div class="flex flex-col justify-between">
+                        <p>Likes</p>
+                        <h3 class="text-3xl text-black dark:text-white">107</h3>
+                    </div>
+                
+                    <div class="flex flex-col items-center justify-between">
+                        <img src="images/icon-youtube.svg" alt="icon-youtube">
+                        <div class="flex items-center">
+                            <img src="images/icon-down.svg" alt="icon-up">
+                            <p class="text-[#DC414C]">19%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 8 -->
+                <div
+                    class=" flex justify-between bg-[#F0F3FA] hover:bg-[#E1E3F0] dark:bg-[#252B43] dark:hover:bg-[#333A56] cursor-pointer px-10 py-6 w-64 min-h-32 gap-4 font-bold rounded-xl">
+                
+                    <!-- info metric -->
+                    <div class="flex flex-col justify-between">
+                        <p>Total Views</p>
+                        <h3 class="text-3xl text-black dark:text-white">1407</h3>
+                    </div>
+                
+                    <div class="flex flex-col items-center justify-between">
+                        <img src="images/icon-youtube.svg" alt="icon-youtube">
+                        <div class="flex items-center gap-1">
+                            <img src="images/icon-down.svg" alt="icon-down">
+                            <p class="text-[#DC414C]">12%</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+             </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
